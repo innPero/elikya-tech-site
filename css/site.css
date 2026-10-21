@@ -19,5 +19,5 @@
 @media print{.topline,.mobile-menu,.desktop-nav,.contact-band,.site-footer,.skip{display:none}.site-header{position:static}.wrap{width:100%}.home-hero{min-height:450px}.hero-photo{opacity:.4}.hero-shade{background:#101b35}.button{border-color:currentColor}a{color:inherit}}
 
 /* Retrait de la localisation dans le bandeau supérieur. */
-.topline>.wrap>span:first-child{display:none}
+.topline>.wrap>span:first-child:not(:last-child){display:none}
 @media(max-width:850px){.topline{display:none}}
