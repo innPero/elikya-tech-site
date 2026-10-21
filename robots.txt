@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://innpero.github.io/elikya-tech-site/sitemap.xml
