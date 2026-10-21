@@ -1,37 +1,39 @@
-# ELIKYA TECH — Site vitrine
+# ELIKYA TECH — site natif, six pages
 
-Site statique HTML, CSS et JavaScript, sans framework, sans compilation et sans clé API.
+HTML sémantique, CSS natif et JavaScript léger, sans framework ni compilation.
 
-## Structure
+## Pages
 
-- `index.html` : page d'accueil et contenu
-- `css/style.css` : design et responsive
-- `js/main.js` : navigation, simulation, onglets, formulaire local
-- `js/config.js` : coordonnées à renseigner
-- `assets/` : logo officiel ELIKYA TECH et photos de l'équipe
-- `.nojekyll` : compatibilité GitHub Pages
+- index.html — Accueil
+- solution.html — ELIKYA SYSTEM
+- applications.html — Résidences, commerces et établissements
+- a-propos.html — Entreprise et parcours
+- equipe.html — Les quatre portraits fournis
+- contact.html — Facebook et préparation locale d’un message
 
-## Mettre en ligne sur GitHub Pages
+Le site fonctionne en ouvrant index.html et sur GitHub Pages depuis main / racine.
+Tous les liens de navigation ouvrent de véritables fichiers HTML. Le menu mobile fonctionne sans JavaScript (details/summary).
 
-1. Sur GitHub, créez un dépôt public appelé `elikya-tech-site` (ou un autre nom de votre choix).
-2. Envoyez **tout le contenu** de ce dossier à la racine du dépôt, y compris `index.html`, `css/`, `js/` et `assets/`.
-3. Dans le dépôt, ouvrez **Settings → Pages → Build and deployment**.
-4. Choisissez **Deploy from a branch**, puis `main` et `/ (root)`, et enregistrez.
-5. Attendez le déploiement puis ouvrez `https://VOTRE-PSEUDO.github.io/elikya-tech-site/`.
+## Contenu
 
-Le site utilise des chemins relatifs ; il fonctionne à la racine d'un dépôt GitHub Pages.
+Source : ELIKYA_TECH_Fiche_Virtus_NOUVEAU_LOGO.pptx (version 1).
+Éléments repris : création en 2026, Kinshasa, équipe de quatre personnes, ELIKYA SYSTEM, analyse des caméras existantes, alertes WhatsApp, cibles et modèle boîtier/abonnement, lauréat du Kinshasa AI Hackathon 2026.
+Aucun chiffre de performance, prix, client, rôle individuel, certification ou témoignage ajouté.
 
-## Personnalisation
+## Images
 
-Dans `js/config.js`, renseignez les liens officiels Facebook, LinkedIn, l'adresse e-mail et le numéro WhatsApp.
-Les coordonnées laissées vides ne s'affichent pas : aucun lien fictif.
+Les portraits et logos proviennent du précédent site. Les quatre scènes (camera.webp, residence.webp, commerce.webp, hotel.webp) sont des images d’illustration créées pour le site ; elles ne représentent pas des clients, des locaux ou des installations d’ELIKYA TECH. Les pages le signalent.
 
-Modifiez les noms et fonctions de l'équipe dans `index.html` lorsque ceux-ci sont confirmés.
+## Contact
 
-## À savoir
+Seul le nom de la page Facebook est fourni dans la fiche. Le lien ouvre donc une recherche explicite de pages, pas un profil supposé. Aucun numéro WhatsApp ou e-mail n’a été inventé.
+Le formulaire prépare un message local à copier ; il ne transmet aucune donnée et ne prétend pas envoyer un message.
 
-- Le bouton **Simuler une alerte** lance seulement une simulation visuelle. Il n'utilise pas de caméra réelle.
-- Les capacités du produit sont présentées comme un projet en cours de développement ; le site ne promet pas d'intégration opérationnelle garantie.
-- Le formulaire prépare le texte du message côté navigateur et ne transmet **aucune donnée à un serveur**.
-- La copie fonctionne en HTTPS. Si elle n'est pas disponible, le texte est sélectionné pour copie manuelle.
-- Le site ne nécessite aucune installation, base de données, service tiers ou bibliothèque.
+## Maintenance
+
+- css/site.css : tous les styles responsive
+- js/site.js : préparation/copie du message et fermeture du menu
+- assets/ : images locales optimisées WebP et logos SVG
+- robots.txt / sitemap.xml : indexation des six pages
+
+Pour remplacer les illustrations par des photos de terrain, remplacer les fichiers WebP correspondants et leurs légendes. Pour ajouter les contacts, modifier contact.html et les pieds de page.
